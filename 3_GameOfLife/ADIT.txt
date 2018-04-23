@@ -1,0 +1,46 @@
+ADIT >>>> Analyze, Draw, Implementation, Test
+
+Project >>>> Game of Life
+
+
+>> Analyze >>
+
+	* >> Work with Matrix
+	* >> Rules of Game
+		- >> All Alive Cell < with Two Alive Neighbors <--> Die
+		- >> All Alive Cell > with Three Alive Neighbors <--> Die
+		- >> All Alive Cell = Two or Three Alive Neighbors <--> Surviver
+		- >> All Death Cell = Three Alive Neighbors <--> Live
+
+	* >> Random Standard Model
+	* >> Ready Standard Model
+	* >> You Draw in Matrix Map
+
+>> Draw >>
+
+____________		          ____________              ___________
+|Main	     |         ---->|Random    |              |Random   |
+|          |         |    |Standard  |------------->|MAP      |------------
+|          |         |    |__________|              |_________|           |
+|__________|         |        ___________           ___________           |
+     |               |   ---->|Ready    |           |Ready    |           |
+     |               |   |    |Standard |---------->|MAP      |--------   |
+     |               |   |    |_________|           |_________|       |   |
+     |               |   |        ___________       ___________       |   |
+_____*______         |   |   ---->|Draw     |       |Draw     |       |   |
+|Menu      |         |   |   |    |Standard |------>|MAP      |----   |   |
+|          |----------   |   |    |_________|       |_________|   |   |   |
+|          |--------------   |         |                          |   |   |
+|__________|------------------         |                          |   |   |
+  ^  |  |                              |                          |   |   |
+  |  |  |                              |                          |   |   |
+  |  |  |                         _____*_____                   __*___*___*__
+  |  |  |                         |Cursor   |                   |Analyze    |
+  |  |  ------------------------->|         |                   |MAP        |
+  |  |                            |_________|                   |___________|
+  |  |                _______                                         |
+  |  ---------------->|Exit |                ___________              |
+  |		      |_____|                |END      |              |
+  |                                          |GAME     |<--------------
+  -------------------------------------------|         |
+	                                     |_________|
